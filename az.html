@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UC Satışı</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .uc-box {
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px solid transparent;
+      border-radius: 20px;
+      width: 260px;
+      padding: 25px 30px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      position: relative;
+      transition: all 0.4s ease;
+      animation: glow 6s linear infinite;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      backdrop-filter: blur(12px);
+    }
+
+    .uc-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    }
+
+    .uc-name {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
+    }
+
+    .uc-price {
+      font-size: 20px;
+      color: #ffe600;
+      text-shadow: 0 0 10px #ffe600;
+    }
+
+    @keyframes glow {
+      0% {
+        border-color: #00ffe1;
+        box-shadow: 0 0 15px #00ffe1;
+      }
+      25% {
+        border-color: #ff00d4;
+        box-shadow: 0 0 15px #ff00d4;
+      }
+      50% {
+        border-color: #00ff8c;
+        box-shadow: 0 0 15px #00ff8c;
+      }
+      75% {
+        border-color: #ff9d00;
+        box-shadow: 0 0 15px #ff9d00;
+      }
+      100% {
+        border-color: #00ffe1;
+        box-shadow: 0 0 15px #00ffe1;
+      }
+    }
+
+    .contact-box {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+      color: #fff;
+      text-shadow: 0 0 6px #fff;
+    }
+
+    .contact-box h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1;
+    }
+
+    .insta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      color: #ff5ea0;
+      text-shadow: 0 0 10px #ff5ea0;
+      margin-top: 10px;
+    }
+
+    .insta img {
+      width: 28px;
+      height: 28px;
+      filter: drop-shadow(0 0 5px #ff5ea0);
+    }
+
+    @media (max-width: 600px) {
+      .uc-box {
+        width: 90%;
+      }
+
+      .uc-name {
+        font-size: 24px;
+      }
+
+      .uc-price {
+        font-size: 18px;
+      }
+
+      .contact-box h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- UC Qutuları -->
+    <div class="uc-box">
+      <div class="uc-name">30 UC</div>
+      <div class="uc-price">0.50 AZN</div>
+    </div>
+    <div class="uc-box">
+      <div class="uc-name">60 UC</div>
+      <div class="uc-price">1 AZN</div>
+    </div>
+    <div class="uc-box">
+      <div class="uc-name">120 UC</div>
+      <div class="uc-price">5 AZN</div>
+    </div>
+    <div class="uc-box">
+      <div class="uc-name">240 UC</div>
+      <div class="uc-price">7AZN</div>
+    </div>
+    <div class="uc-box">
+      <div class="uc-name">500 UC</div>
+      <div class="uc-price">12 AZN</div>
+    </div>
+    <div class="uc-box">
+      <div class="uc-name">1000 UC</div>
+      <div class="uc-price">25 AZN</div>
+    </div>
+    <div class="uc-box">
+      <div class="uc-name">2000 UC</div>
+      <div class="uc-price">48 AZN</div>
+    </div>
+
+    <!-- Əlaqə -->
+    <div class="contact-box">
+      <h2>Sifariş üçün aşağıdakı inistaqram hesabına yazın</h2>
+      <div class="insta">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+         <h1>uc_shop.2025</h1>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
